@@ -4,7 +4,7 @@
 
 A personal Telegram bot designed to help you track your time effortlessly and analyze how you spend it. Log activities with simple commands and receive text summaries and visual charts of your productivity.
 
-![Bot Screenshot](https://i.imgur.com/example.png)
+
 
 ---
 
