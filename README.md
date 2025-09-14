@@ -4,7 +4,7 @@
 
 A personal Telegram bot designed to help you track your time effortlessly and analyze how you spend it. Log activities with simple commands and receive text summaries and visual charts of your productivity.
 
-![Bot Screenshot](https://i.imgur.com/example.png)
+![Bot Screenshot](https://i.imgur.com/px3XRh7.png)
 
 ---
 
@@ -91,12 +91,6 @@ Interact with your bot in Telegram using the following commands:
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository and open a pull request with your improvements.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
