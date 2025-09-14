@@ -4,12 +4,16 @@
 
 A personal Telegram bot designed to help you track your time effortlessly and analyze how you spend it. Log activities with simple commands and receive text summaries and visual charts of your productivity.
 
-!(https://i.imgur.com/example.png) ## Features ✨
+![Bot Screenshot](https://i.imgur.com/example.png)
+
+---
+
+## Features ✨
 
 - **Simple Time Tracking**: Start and stop tracking any activity with the `/begin` and `/stop` commands.
 - **Persistent Storage**: All your activity data is saved in a local SQLite database.
 - **Data Analysis**: Get summaries of your time usage for the current day or week.
-- **Visual Reports**: Receive a pie chart visualizing your time distribution for a clear overview.
+- **Visual Reports**: Receive pie charts visualizing your time distribution for a clear overview.
 - **Secure**: Your API token is kept safe and separate from the code using environment variables.
 
 ---
@@ -17,7 +21,7 @@ A personal Telegram bot designed to help you track your time effortlessly and an
 ## Technologies Used 🛠️
 
 - **Backend**: Python
-- **Telegram API Wrapper**: `python-telegram-bot`
+- **Telegram API Wrapper**: [`python-telegram-bot`](https://github.com/python-telegram-bot/python-telegram-bot)
 - **Database**: SQLite
 - **Data Analysis**: Pandas
 - **Data Visualization**: Matplotlib
@@ -27,43 +31,78 @@ A personal Telegram bot designed to help you track your time effortlessly and an
 
 ## Setup and Installation 🚀
 
-Follow these steps to get your own instance of the bot running.
-
 ### 1. Prerequisites
 
 - Python 3.8 or newer
-- A Telegram Bot Token from **@BotFather**
+- A Telegram Bot Token from [@BotFather](https://t.me/BotFather)
 
 ### 2. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone https://github.com/ForOverrr/Personal-Time-Tracking---Analytics-Telegram-Bot.git
+cd Personal-Time-Tracking---Analytics-Telegram-Bot
+```
 
+### 3. Create and Activate the Virtual Environment
 
-# Create the environment
+```bash
 python -m venv venv
 
-# Activate it (on Mac/Linux)
+# Activate on Mac/Linux
 source venv/bin/activate
 
-# Activate it (on Windows)
+# Activate on Windows
 .\venv\Scripts\activate
+```
 
+### 4. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
+### 5. Configure Environment Variables
 
-5. Configure Environment Variables
+Create a file named `.env` in the root of your project folder and add your Telegram API token:
 
-Create a file named .env in the root of your project folder and add your Telegram API token.
-
-.env:
-
+```env
 TELEGRAM_TOKEN="YOUR_REAL_API_TOKEN_HERE"
-6. Run the Bot
+```
 
-Start the bot with the following command:
+### 6. Run the Bot
 
-Bash
+```bash
 python bot.py
+```
+
+---
+
+## Usage
+
+Interact with your bot in Telegram using the following commands:
+
+- `/begin <activity>` — Start tracking a new activity (e.g. `/begin Reading`)
+- `/stop` — Stop tracking the current activity
+- `/summary` — Get a summary of your time usage for today or the current week
+- `/chart` — Receive a pie chart showing your time distribution
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and open a pull request with your improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgements
+
+- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [python-dotenv](https://github.com/theskumar/python-dotenv)
