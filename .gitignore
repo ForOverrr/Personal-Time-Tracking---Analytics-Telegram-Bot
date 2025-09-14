@@ -1,0 +1,8 @@
+# Environment variables
+.env
+
+# Database file
+timetracker.db
+
+# Python virtual environment
+venv/
